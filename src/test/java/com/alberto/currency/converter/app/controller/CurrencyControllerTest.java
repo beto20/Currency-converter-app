@@ -62,7 +62,7 @@ class CurrencyControllerTest {
 
         MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/currency/update-value")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"message\":\"success\"}")
+                .content("{\"currencyType\":\"USD\",\"rate\":2.1}")
         ).andReturn();
 
         Assertions.assertEquals(HttpStatus.OK.value(), result.getResponse().getStatus());

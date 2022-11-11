@@ -1,14 +1,20 @@
 package com.alberto.currency.converter.app.model.dto.response;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 import java.io.Serializable;
 
 public class CurrencyResponseWebDto implements Serializable {
 
     private static final long serialVersionUID = 7821843697794351765L;
 
+    @Schema(description = "Monto", example = "100.00")
     private Float amount;
+    @Schema(description = "Monto con tipo de cambio", example = "25.9362")
     private Float currencyTypeAmount;
+    @Schema(description = "Tipo de cambio origen", example = "PEN")
     private String currencyOrigin;
+    @Schema(description = "Tipo de cambio destino", example = "USD")
     private String currencyDestiny;
 
     public CurrencyResponseWebDto() {
