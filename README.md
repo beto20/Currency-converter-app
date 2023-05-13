@@ -1,15 +1,15 @@
-## Descripcion
-Aplicacion de conversion de divisa.
+## Description
+Back-end app for currency exchange
 
-Se empleo: Spring boot 2.7.5, Java 11, Maven 3.6.3, Spring data, Spring cloud, Open api 
+Technologies used: Spring boot 2.7.5, Java 11, Maven 3.6.3, Spring data, Spring cloud, Open api 
 
-## Instalacion
+## Installation
 
 ```bash
 $ mvn clean install
 ```
 
-## Ejecucion de aplicacion
+## Execute application
 
 ```bash
 # development
